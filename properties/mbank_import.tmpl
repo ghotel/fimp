@@ -1,0 +1,43 @@
+mBank Bankowość Detaliczna BRE Banku SA;;;;;;;
+Skrytka Pocztowa 2108;;;;;;;
+90-959 Łódź 2;;;;;;;
+www.mBank.pl;;;;;;;
+mLinia: 0801 300 800;;;;;;;
++48 42 6 300 800;;;;;;;
+;;;;;;;
+#Klient;;;;;;;
+KAROL PAWEŁ JANISZEWSKI;;;;;;;
+;;;;;;;
+Elektroniczne zestawienie operacji;;;;;;;
+;;;;;;;
+#Za okres:;;;;;;;
+01.10.2012;15.11.2012;;;;;;
+#Rodzaj rachunku;;;;;;;
+EKONTO;;;;;;;
+#Waluta;;;;;;;
+PLN;;;;;;;
+#Numer rachunku;;;;;;;
+39 114 020 040 000 300 000 000 000;;;;;;;
+#Data następnej kapitalizacji;;;;;;;
+2012-11-30;;;;;;;
+#Oprocentowanie rachunku;;;;;;;
+0,00%;;;;;;;
+#Limit kredytu;;;;;;;
+0,00 PLN;;;;;;;
+#Oprocentowanie kredytu;;;;;;;
+0,00%;;;;;;;
+;;;;;;;
+#Podsumowanie obrotów na rachunku;#Liczba operacji;#Wartość operacji;;;;;
+Uznania;3;10 619,88 PLN;;;;;
+Obciążenia;21;4 457,21 PLN;;;;;
+Łącznie;24;6 162,67 PLN;;;;;
+;;;;;;;
+#Saldo początkowe;777,42 PLN;;;;;;
+;;;;;;;
+#Data operacji;#Data księgowania;#Opis operacji;#Tytuł;#Nadawca/Odbiorca;#Numer konta;#Kwota;#Saldo po operacji
+<% transactions.each{ tr ->
+     println "${tr.date};${tr.date};${tr.description};;  ;'';-${tr.amount};100"  }%>;;;;;;;
+;;;;;;;
+;;;;;;#Saldo końcowe;6 940,09 PLN
+;;;;;;;
+Niniejszy dokument sporządzono na podstawie art. 7 Ustawy Prawo Bankowe (Dz. U. Nr 140 z 1997 roku, poz.939 z późniejszymi zmianami).;;;;;;;
