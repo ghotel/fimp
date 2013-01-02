@@ -83,7 +83,7 @@ class Ifim {
 
     static def createEmptyDataSourceFile() {
         File f = new File(TemplateEngine.INPUT_FILE)
-        f.write("2012-11-23;Transakcja;1,00")
+        f.write(new Date().format("yyyy-M-d") + ";Transakcja;1,00")
     }
 
     static def createImport() {
